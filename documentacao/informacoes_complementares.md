@@ -1,5 +1,16 @@
 # Informações complementares
 
+## A TV Box não carrega o lightdm!
+
+1. Na inicialização, caso a sua TV Box não carregue o serviço lightdm, será necessário realizar procedimentos adicionais.
+   - Instalação do pacote gtk-greeter
+     - Execute o comando `sudo apt install lightdm-gtk-greeter`.
+   - Troca do arquivo de configuração do xog
+     - Acessar o diretório /etc/X11/ por meio do comando `cd /etc/X11/`.
+     - Apagar o arquivo original por meio do comando `sudo rm xorg.conf`.
+     - Baixar o arquivo xorg.conf disponível nesta página por meio do comando `wget https://github.com/lnrddev/tvbox/blob/main/files/xorg.conf`.
+     - Reiniciar com o comando `sudo reboot now`.
+
 ## Alteração das senhas do root e do usuário comum
 
 1. Para alterar a senha do usuário **tvboxreceita**, execute o comando abaixo.
